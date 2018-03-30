@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="algonquin.cst2335.com.cst2335_final_project.MainActivity">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"/>
+
+    <Button
+        android:id="@+id/btnBadal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtBadal"/>
+
+    <Button
+        android:id="@+id/btnShivank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtShivank"/>
+
+    <Button
+        android:id="@+id/btnPriyanka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPriyanka"/>
+
+    <Button
+        android:id="@+id/btnLan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtLan"/>
+
+</LinearLayout>

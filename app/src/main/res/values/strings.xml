@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CST2335_Final_Project</string>
+    <string name="txtBadal">OC Transpo</string>
+    <string name="txtShivank">Movie Information</string>
+    <string name="txtPriyanka">Patient Intake Form</string>
+    <string name="txtLan">Quiz Creater</string>
+
+
+</resources>
