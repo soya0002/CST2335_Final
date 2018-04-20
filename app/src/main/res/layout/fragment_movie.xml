@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/detailsImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        />
+    <LinearLayout
+        android:id="@+id/actLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/detailsImage">
+
+    <TextView
+        android:id="@+id/actorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actors"
+        android:textStyle="bold"
+        android:layout_below="@id/detailsImage"/>
+    <EditText
+        android:id="@+id/actorBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@id/detailsImage"
+        android:layout_toRightOf="@id/actorLabel"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/genreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/actLayout">
+    <TextView
+        android:id="@+id/genreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genre"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/genreBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/genreLabel"
+        android:enabled="false"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/desLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/genreLayout">
+    <TextView
+        android:id="@+id/desLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/description"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/desBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:enabled="false"
+        android:layout_toRightOf="@id/desLabel"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lengthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/desLayout">
+
+        <TextView
+            android:id="@+id/lengthLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/length"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/lengthBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:layout_toRightOf="@id/desLabel"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ratingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lengthLayout">
+
+        <TextView
+            android:id="@+id/ratingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rating"
+            android:textStyle="bold" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:enabled="false"
+            android:rating="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_below="@id/ratingLayout"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnUpdate"
+            android:text="Update"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btnEdit"
+            android:text="Edit"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="Delete"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

@@ -6,13 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    private Button btnBadal;
 
+public class MainActivity extends AppCompatActivity {
+    private Button btnShivank;
+    private Button btnBadal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btnBadal = (Button) findViewById(R.id.btnBadal);
         btnBadal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -20,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,OCTranspoActivity.class));
             }
         });
+
+        btnShivank = (Button) findViewById(R.id.btnShivank);
+        btnShivank.setOnClickListener(e -> {
+          Intent intent = new Intent(getApplicationContext(),MovieInfoActivity.class);
+          startActivity(intent);
+
+      });
     }
 
 }

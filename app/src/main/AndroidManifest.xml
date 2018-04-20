@@ -18,9 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".OCTranspoActivity" />
         <activity android:name=".OCTranspoDetailActivity" />
         <activity android:name=".HistoryActivity"></activity>
+
+        <activity android:name=".MovieInfoActivity" />
+        <activity android:name=".MovieDetails" />
+        <activity android:name=".MovieForm"></activity>
+
     </application>
 
 </manifest>

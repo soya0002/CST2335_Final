@@ -5,5 +5,11 @@
     <string name="txtPriyanka">Patient Intake Form</string>
     <string name="txtLan">Quiz Creater</string>
     <string name="btnSearchStop">Go</string>
+    <string name="actors">Actors:</string>
+    <string name="genre">Genre:</string>
+    <string name="description">Description:</string>
+    <string name="length">Length:</string>
+    <string name="rating">Rating:</string>
+
 
 </resources>

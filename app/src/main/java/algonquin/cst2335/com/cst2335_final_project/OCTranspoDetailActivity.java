@@ -1,13 +1,17 @@
 package algonquin.cst2335.com.cst2335_final_project;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import algonquin.cst2335.com.cst2335_final_project.fragments.TripsFragment;
@@ -55,8 +59,21 @@ public class OCTranspoDetailActivity extends AppCompatActivity {
 
         }
         else if(item.getItemId() == R.id.ch_Help){
-            Snackbar.make(fm_trips, " Shows results based on stop no", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
+            AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+            LayoutInflater inflater = this.getLayoutInflater();
+            View view = inflater.inflate(R.layout.cus_layout_oc, null);
+
+            builder1.setView(view)
+                    // Add action buttons
+                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.dismiss();
+                        }
+                    });
+
+            AlertDialog dialog2 = builder1.create();
+            dialog2.show();
         }
         return super.onOptionsItemSelected(item);
     }
