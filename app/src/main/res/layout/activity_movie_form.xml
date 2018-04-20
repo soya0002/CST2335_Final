@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="algonquin.cst2335.com.cst2335_final_project.MovieForm">
+
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textStyle="bold"
+        ></TextView>
+        <EditText
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleLabel"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageUrlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/titleLayout"
+        >
+        <TextView
+            android:id="@+id/imageUrlLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Url"
+            android:textStyle="bold"
+            ></TextView>
+        <EditText
+            android:id="@+id/imgUrlTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleLabel"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageUrlLayout">
+
+        <TextView
+            android:id="@+id/actorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/actors"
+            android:textStyle="bold"
+            ></TextView>
+        <EditText
+            android:id="@+id/actorBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/actorLabel"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/genreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/actLayout">
+        <TextView
+            android:id="@+id/genreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genre"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/genreBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/genreLabel"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/desLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/genreLayout">
+        <TextView
+            android:id="@+id/desLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/description"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/desBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/desLabel"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lengthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/desLayout">
+
+        <TextView
+            android:id="@+id/lengthLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/length"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/lengthBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/desLabel"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ratingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lengthLayout">
+
+        <TextView
+            android:id="@+id/ratingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rating"
+            android:textStyle="bold" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="0"
+            android:isIndicator="false"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_below="@id/ratingLayout"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit Data"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
