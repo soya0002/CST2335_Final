@@ -4,6 +4,6 @@
     <string name="txtShivank">Movie Information</string>
     <string name="txtPriyanka">Patient Intake Form</string>
     <string name="txtLan">Quiz Creater</string>
-
+    <string name="btnSearchStop">Go</string>
 
 </resources>
